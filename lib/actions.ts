@@ -7,7 +7,7 @@ import { writeClient } from "@/sanity/lib/write-client";
 import { parse } from "path";
 
 export const createPitch = async (
-  state: any,
+  state: Record<string, unknown>,
   form: FormData,
   pitch: string
 ) => {

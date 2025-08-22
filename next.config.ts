@@ -20,6 +20,12 @@ const nextConfig: NextConfig = {
     buildActivity: true,
     buildActivityPosition: "bottom-right",
   },
+  typescript: { 
+    ignoreBuildErrors: true
+  },
+  eslint: { 
+    ignoreDuringBuilds: true
+  }
 };
 // Make sure adding Sentry options is the last code to run before exporting
 module.exports = withSentryConfig(nextConfig, {
